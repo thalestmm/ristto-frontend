@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global definition */
+body {
+  @apply
+    bg-zinc-50
+    container
+    mx-auto
+    font-sans
+    text-zinc-800
+    subpixel-antialiased
+}
+
+h1 {
+  @apply
+    text-3xl
+    font-bold
+
+}
+
+/* Basic layouts */
+.app-container {
+  @apply
+    container
+    mx-auto
+    box-content
+    max-w-screen-sm
+    grow
+}
+
+/* Specific layouts */
+.menu-navbar {
+  @apply
+    sticky
+    top-0
+    bg-zinc-50
+    shadow-md
+    shadow-zinc-50
+    flex
+    overflow-x-auto
+    ml-3
+    py-2
+}
+
+.nav-item {
+  @apply
+  px-2
+  justify-end
+}
+
+.active-link {
+  @apply
+    underline-offset-1
+    text-base
+}
+
+.nav-link {
+  @apply
+    text-sm
+    font-semibold
+    text-gray-900
+}
+
+.ristto-footer {
+  @apply
+    container
+    mx-auto
+    bottom-0
+    mt-3
+    fixed
+    text-xs
+    text-center
+    text-zinc-400
+    py-2
+    bg-zinc-50
+    shadow-md
+    shadow-zinc-50
+    rotate-180 /* Rotating to make the shadow turn upwards */
+}
+
+.footer-link {
+  @apply
+    underline
+    underline-offset-1
+    text-indigo-800
+    visited:text-red-600
+}
+
+.category-container {
+  @apply
+    grid
+    gap-3
+    grid-cols-1
+    mx-2
+    pb-2
+    mb-3
+}
+
+.category-title {
+  @apply
+    text-3xl
+    font-black
+    mt-1
+    ml-3
+}
+
+.category-description {
+  @apply
+    text-zinc-400
+    ml-3
+}
+
+.item-card {
+  @apply
+    justify-normal
+    box-content
+    block
+    bg-zinc-100
+    shadow-md
+    px-3
+    mx-1
+    py-1
+    mt-1
+    rounded-lg
+
+}
+
+.card-title {
+  @apply
+    text-zinc-700
+    font-bold
+    inline
+    text-xl
+}
+
+.card-description {
+  @apply
+    text-zinc-400
+    mt-2
+    text-sm
+}
+
+
+.card-price {
+  @apply
+    text-zinc-500
+    text-xl
+    font-semibold
+    my-1
+
+}
