@@ -66,12 +66,10 @@ h1 {
 .ristto-footer {
   @apply
     container
-    mx-auto
     bottom-0
     mt-3
     fixed
     text-xs
-    text-center
     text-zinc-400
     py-2
     bg-zinc-50

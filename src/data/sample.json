@@ -1,0 +1,56 @@
+{"categories": 
+    [
+    {
+        "id": 3,
+        "items": [
+            {
+                "id": 5,
+                "name": "Caipirinha",
+                "description": "",
+                "photo": null,
+                "price": "16.99",
+                "visible": true,
+                "lactose_free": false,
+                "gluten_free": false,
+                "vegan": false,
+                "category": 3
+            },
+            {
+                "id": 4,
+                "name": "Mojito",
+                "description": "",
+                "photo": null,
+                "price": "23.99",
+                "visible": false,
+                "lactose_free": true,
+                "gluten_free": true,
+                "vegan": true,
+                "category": 3
+            }
+        ],
+        "name": "Drinks",
+        "description": "Carta de drinks selecionada para a estação.",
+        "visible": true
+    },
+    {
+        "id": 2,
+        "items": [
+            {
+                "id": 3,
+                "name": "Teste",
+                "description": "",
+                "photo": "http://localhost:8000/media/menu/3_yaEtpDO.png",
+                "price": "18.99",
+                "visible": true,
+                "lactose_free": true,
+                "gluten_free": true,
+                "vegan": true,
+                "category": 2
+            }
+        ],
+        "name": "Testing",
+        "description": "",
+        "visible": false
+    }
+]
+}

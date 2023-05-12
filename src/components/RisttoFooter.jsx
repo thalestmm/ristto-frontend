@@ -4,7 +4,7 @@
 function RistoFooter() {
     return(
         <div id="footer" class="ristto-footer">
-            <p class="rotate-180">
+            <p class="rotate-180 relative mx-auto text-center">
                 Desenvolvido pela 
                 <a class="footer-link" href="https://www.ristto.app">
                     Ristto

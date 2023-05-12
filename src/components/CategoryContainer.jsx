@@ -5,14 +5,15 @@ function CategoryContainer(props) {
         <section class="category-section">
             <div class="category-container">
                 <h2 class="category-title">
-                    Lorem, ipsum.
+                    {props.name} 
                 </h2>
                 <text class="category-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium officiis iusto enim minus sit ad!
+                    {props.description}
                 </text>
-                 <PlainItemCard />
-                 <PlainItemCard />
-                 <PlainItemCard />
+
+                {/* * Place item cards here */}
+                {props.children}
+
                 <hr class="mt-3"></hr>
             </div>
         </section>

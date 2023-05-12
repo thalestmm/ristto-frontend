@@ -6,12 +6,6 @@ function MenuNavbar(props) {
         <nav class="menu-navbar">
             <ul class="flex list-none">
                 {props.children}
-                <NavItem name="Drinks" sectionLink="drinks" />
-                <NavItem name="Entreé" sectionLink="entree"/>
-                <NavItem name="Desserts" sectionLink="desserts"/>
-                <NavItem name="Drinks" sectionLink="drinks" />
-                <NavItem name="Entreé" sectionLink="entree"/>
-                <NavItem name="Desserts" sectionLink="desserts"/>
             </ul>
         </nav>
         </>
