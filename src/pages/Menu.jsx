@@ -3,19 +3,13 @@ import CategoryContainer from "../components/CategoryContainer";
 import PlainItemCard from "../components/PlainItemCard";
 import NavItem from "../components/NavItem";
 import MenuNavbar from "../components/MenuNavbar";
+import RestaurantHeader from "../components/RestaurantHeader";
 
 
 const fetchMenu = async () => {
-    // const res = await fetch("http://localhost:8000/api/menu", {
-    //     method:"get",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //         "Access-Control-Allow-Origin" : "*", 
-    //         "Access-Control-Allow-Credentials" : true 
-    //     }
-    // })
-
-    const res = await fetch("http://localhost:4000/categories")
+    // TODO: Change to API URL for production
+    // const res = await fetch("http://localhost:8000/api/menu")
+    const res = await fetch("https://api.ristto.app/api/menu")
 
     return res.json()
 }
@@ -25,14 +19,14 @@ export default function Menu() {
 
     return (
         <>
-        <p>{console.log(categories(), categories.loading)}</p>
-        <Show when={categories()} fallback={<p>Loading...</p>}>
+        <RestaurantHeader />
+        <Show when={categories()} fallback={<h2 class='mt-7 mx-auto ml-6 font-bold'>Carregando...</h2>}>
         {/* TODO: Implement loading animation on fallback */}
         <MenuNavbar>
             <For each={categories()}>
                 {(category) => (
                     <Show when={category.visible}>
-                        <NavItem name={category.name} />
+                        <NavItem name={category.name} sectionLink={category.section_name}/>
                     </Show>
                 )}
             </For>
@@ -42,7 +36,7 @@ export default function Menu() {
             <For each={categories()}>
                 {(category) => (
                     <Show when={category.visible}>
-                        <CategoryContainer name={category.name} description={category.description}>
+                        <CategoryContainer name={category.name} description={category.description} section={category.section_name}>
                             <For each={category.items}>
                                 {(item) => (
                                     <PlainItemCard name={item.name} description={item.description} price={item.price} />

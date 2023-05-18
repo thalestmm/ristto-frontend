@@ -2,7 +2,7 @@ import PlainItemCard from "./PlainItemCard";
 
 function CategoryContainer(props) {
     return(
-        <section class="category-section">
+        <section class="category-section" id={props.section}> {/* TODO: Ensure section id uniqueness */}
             <div class="category-container">
                 <h2 class="category-title">
                     {props.name} 

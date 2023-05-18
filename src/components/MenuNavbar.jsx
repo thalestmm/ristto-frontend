@@ -4,9 +4,11 @@ function MenuNavbar(props) {
     return(
         <>
         <nav class="menu-navbar">
-            <ul class="flex list-none">
-                {props.children}
-            </ul>
+            <div class="whitespace-nowrap app-container">
+                <ul class="flex list-none flex-row flex-nowrap">
+                    {props.children}
+                </ul>
+            </div>
         </nav>
         </>
     )

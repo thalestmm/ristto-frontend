@@ -1,0 +1,1 @@
+// Make the photo a circle positioned at the right-most part of the card, clipped on the top, bottom and right

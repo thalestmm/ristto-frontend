@@ -39,15 +39,20 @@ h1 {
     shadow-md
     shadow-zinc-50
     flex
+    flex-nowrap
     overflow-x-auto
     ml-3
     py-2
+    snap-x
+    snap-mandatory
 }
 
 .nav-item {
   @apply
   px-2
   justify-end
+  flex
+  flex-nowrap
 }
 
 .active-link {
