@@ -39,7 +39,7 @@ export default function Menu() {
                         <CategoryContainer name={category.name} description={category.description} section={category.section_name}>
                             <For each={category.items}>
                                 {(item) => (
-                                    <PlainItemCard name={item.name} description={item.description} price={item.price} />
+                                    <PlainItemCard name={item.name} description={item.description} price={item.price} country_code={item.origin_country_code}/>
                                 )}
                             </For>
                         </CategoryContainer>
